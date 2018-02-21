@@ -1,0 +1,38 @@
+#include<stdio.h>
+int main()
+{
+	int i,j,n,temp,a[100];
+	{
+		printf("How many numbers to be inputed?");
+		scanf("%d",&n);
+		printf("Enter number one by one:\n");
+		for(i=0;i<n;i++)
+		{
+			scanf("%d",&a[i]);
+		}
+	printf("\nThe numbers inputed are:");
+		for(i=0;i<n;i++)
+		{
+			printf("\na[%d]=%d",i,a[i]);
+	}
+		for(i=0;i<n;i++)
+		{
+			for(j=0;j<n-i-1;j++)
+			{
+				if(a[j]>a[j+1])
+				{
+					temp=a[j];
+					a[j]=a[j+1];
+					a[j+1]=temp;
+					
+				}
+			}
+		}
+		printf("\n\nThe number in ascending order is:\n");
+		for(i=0;i<n;i++)
+		{
+			printf("%d\n",a[i]);
+		}
+		
+	}
+}
