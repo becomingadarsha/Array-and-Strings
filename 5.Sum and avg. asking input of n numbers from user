@@ -1,0 +1,24 @@
+#include<stdio.h>
+int main()
+{
+	int i,avg,n,j,k,a[100],sum=0;
+	printf("How many numbers to be inputed ?:");
+	scanf("%d",&n);
+	printf("\nEnter elements one by one:\n");
+	{
+		for(i=0;i<n;i++)
+		scanf("%d",&a[i]);
+	}
+	printf("\nInputed numbers are:\n");
+	for(i=0;i<n;i++)
+	{
+		printf("a[%d]=%d\n",i,a[i]);
+	}
+	for(i=0;i<n;i++)
+	{
+		sum=sum+a[i];
+	}
+	avg=sum/n;
+	printf("\nThe sum is %d and average is %d",sum,avg);
+	return 0;
+}
