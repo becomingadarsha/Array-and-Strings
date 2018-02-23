@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main()
+{
+	int i,n,c,j,a[100];
+	printf("How many array to be inputed?:");
+	scanf("%d",&n);
+	printf("Enter constant that increases every number:");
+	scanf("%d",&c);
+	printf("\n\nEnter number one by one:\n");
+	for(i=0;i<n;i++)
+	 {
+		scanf("%d",&a[i]);
+	 }
+	printf("\n\nThe numbers after increment by %d are:\n",c);
+	 for(i=0;i<n;i++)
+	 {
+	a[i]=a[i]+c;
+	 printf("%d\n",a[i]);
+	 }
+	return 0;
+}
