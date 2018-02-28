@@ -1,0 +1,27 @@
+#include<stdio.h>
+int main()
+{
+	int i,j,n,a[100],sum=0;
+	printf("How many numbers to be inputed ?");
+	scanf("%d",&n);
+	printf("Enter numbers one by one:\n");
+	for(i=0;i<n;i++)
+	{
+		scanf("%d",&a[i]);
+	}
+printf("\nThe odd numbers are:\n");
+	for(i=0;i<n;i++)
+	{
+		if(a[i]%2==0)
+	{
+	 	continue;
+	}
+	else
+	{
+	printf("%d\n",a[i]);
+	}
+	sum=sum+a[i];
+	}
+	printf("\n\nThe sum of odd numbers given is %d.",sum);
+	return 0;
+}
