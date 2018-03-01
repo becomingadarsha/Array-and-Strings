@@ -1,0 +1,46 @@
+#include<stdio.h>
+int main()
+{
+	int age,i,j,child=0,teen=0,adult=0,young=0,old=0,a[100];
+	printf("Enter age of twenty people:\n");
+	for(i=0;i<20;i++)
+	{
+		scanf("%d",&a[i]);
+	}
+	for(i=0;i<20;i++)
+	{
+		if(a[i]<13)
+		{
+			child++;
+
+		}
+
+		else if(a[i]>=13 && a[i]<20)
+		{
+			teen++;
+
+		}
+
+		else if(a[i]>=20&&a[i]<31)
+		{
+			adult++;
+
+		}
+		else if(a[i]>=31 && a[i]<55)
+		{
+
+			young++;
+		}
+		else
+			{
+		old++;
+		}
+	}
+	printf("\nThe no. of child = %d",child);
+	printf("\nThe no. of teen = %d",teen);
+	printf("\nThe no. of adult = %d",adult);
+	printf("\nThe no. of young = %d",young);
+	printf("\nThe no. of old = %d",old);
+
+	return 0;
+}
