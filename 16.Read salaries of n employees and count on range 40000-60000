@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main()
+{
+	int n,a[100],count=0,i;
+	printf("Enter number of employees:");
+	scanf("%d",&n);
+	printf("Enter salary of employees one by one:");
+	for(i=0;i<n;i++)
+	{
+		scanf("%d",&a[i]);
+	}
+	for(i=0;i<n;i++)
+	{
+		if(a[i]>=40000&&a[i]<=60000)
+		{
+			count++;
+		}
+	}
+	printf("The number of employess whose salary ranges between 40000-60000 is %d",count);
+	return 0;
+}
