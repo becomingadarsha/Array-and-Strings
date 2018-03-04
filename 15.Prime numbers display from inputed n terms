@@ -1,0 +1,29 @@
+#include<stdio.h>
+int main()
+{
+	int n,i,j,c=0,a[100];
+	printf("How many numbers to be inputed ?");
+	scanf("%d",&n);
+	printf("\nEnter the numbers:\n");
+	for(i=1;i<=n;i++)
+	{
+	 scanf("%d",&a[i]);
+	}
+	printf("\n\nThe prime numbers are:  ");
+	for(i=1;i<=n;i++)
+	{
+	    c = 0;
+	    for(j=1; j<=a[i]; j++)
+        {
+            if(a[i]%j==0)
+            {
+                c=c+1;
+            }
+        }
+        if(c==2)
+        {
+            printf("%d\t",a[i]);
+        }
+	}
+	return 0;
+}
