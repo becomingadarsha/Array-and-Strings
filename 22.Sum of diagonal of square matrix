@@ -8,19 +8,17 @@ int main()
 	{
 
 	printf("\nEnter the components of matrix:\n");
-	for(i=0; i<row; ++i)
+	for(i=0; i<row; i++)
 	{
-
-        for(j=0; j<col; ++j)
+        for(j=0; j<col; j++)
         {
-            printf("Enter elements a%d%d: ",i+1, j+1);
             scanf("%d", &a[i][j]);
         }
     }
     
-        	for(i=0; i<row; ++i)
+        	for(i=0; i<row; i++)
         	{
-        		 for(j=0; j<col; ++j)
+        		 for(j=0; j<col; j++)
         {
         	if(i==j)
         	{
