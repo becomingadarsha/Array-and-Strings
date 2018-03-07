@@ -1,0 +1,8 @@
+#include<stdio.h>
+int main()
+{
+	char str[50];
+	printf("Enter a sentence:");
+	scanf("%s",str);
+	printf("%s",str);
+}
