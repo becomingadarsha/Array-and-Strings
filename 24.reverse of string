@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<string.h>
+ 
+int main()
+ {
+   char str[100], rev;
+   int i=0,c,j;
+   printf("enter the string :\n");
+   gets(str);
+   j = strlen(str)-1;
+   while (i < j) 
+   {
+	  rev = str[i];
+      str[i] = str[j];
+      str[j] = rev;
+      i++;
+      j--;
+   }
+ 
+   printf("Reverse string is\n%s",str);
+   return 0;
+}
