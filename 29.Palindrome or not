@@ -1,0 +1,32 @@
+Write a program to check whether the word is palindrome or not.
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+    char string1[20];
+    int i, length;
+    int flag = 0;
+    
+    printf("Enter a string:");
+    /*scanf("%s", string1);*/
+	gets(string1);
+    length = strlen(string1);
+    
+    for(i=0;i < length ;i++){
+        if(string1[i] == string1[length-i-1]) //RAR = R!=RAR[3-0-1] R[2]=R continuess..
+		{
+            flag=1;
+            continue;
+   }
+}
+    
+    if (flag==1)
+	 {
+        printf("%s is  a palindrome", string1);
+    }    
+    else
+	 {
+        printf("%s is not a palindrome", string1);
+    }
+    return 0;}
