@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<string.h> 
+int main()
+{
+	int i,count=1;
+	char str[100];
+	printf("Enter a line:");
+	scanf("%[^\n]",str);
+	for(i=0;i<strlen(str);i++) //for(i=0;i<str[i]!='\0';i++)
+	{
+		if(str[i]==' ')
+		{
+			count++;
+		}
+	}
+	printf("There are %d word in a sentence",count);
+}
