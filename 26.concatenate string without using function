@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main()
+{
+ int i,j;
+ char str1[100],str2[100];
+ printf("Enter a first string:");
+ gets(str1);
+ printf("Enter second string:");
+ gets(str2);
+ for(i=0;str1[i]!='\0';i++) //i ko value increase vaera maximum vaisakchha
+ {
+ } 
+ //2nd loop ma i ko last index ma j ko value assign hunxa
+ for(j=0;str2[j]!='\0';i++,j++) //i ra j ko value increase vairahanchha 
+ {
+  str1[i]=str2[j]; 
+    }
+ str1[i]='\0'; //str[i] = '\0'; string terminates from null character so (compiler ta stupid hunxa null last ma xaina vane string hoina vanne bujhxa)
+ printf("%s",str1);
+ return 0;
+}
