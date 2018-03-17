@@ -2,7 +2,7 @@
 #include<string.h>
 int main()
 {
-	int i, vowel=0, cons=0, digit=0, spchar=0, digits=0,space=0;
+	int i, vowel=0, cons=0, spchar=0, digits=0,space=0;
 	char str[100];
 	printf("Enter string:\n");
 	gets(str);
