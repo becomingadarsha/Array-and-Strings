@@ -1,5 +1,5 @@
 #include<stdio.h>
-int main()
+int main() //In bubble sort first compare with second and goes till last moving the largest number backward
 {
 	int i,j,n,temp,a[100];
 	{
