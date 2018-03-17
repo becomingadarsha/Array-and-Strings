@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main()
+{
+	int i,n;
+	char str[25];
+	printf("How many students");
+	scanf("%d",&n);
+ printf("Enter student name one by one: ");
+   for(i=0;i<=n;i++)
+     {
+     	gets(str[i]);	
+	 }
+	  
+ for(i=0;i<=n;i++)
+     {
+     puts(str[i]);	
+	 }
+}
