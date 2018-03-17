@@ -1,0 +1,35 @@
+#include<stdio.h>
+int main()
+{
+	int i,j,size,temp,loc;
+	printf("enter number of elements:");
+	scanf("%d",&size);
+	int a[size];
+	printf("enter numbers : ");
+	for(i=0;i<size;i++)
+	{
+		scanf("%d",&a[i]);
+	}
+	for(i=0;i<size-1;i++)
+	{
+		loc=i;
+		for(j=i+1;j<size;j++)
+		{
+			if(a[loc]>a[j])
+			{
+				loc=j;
+			}
+		}
+		if(loc!=i)
+		{
+			temp=a[loc];
+				a[loc]=a[i];
+				a[i]=temp;
+			}
+	}
+	printf(":ascending order:\n");
+	for(i=0;i<size;i++)
+	{
+		printf("%d\t",a[i]);
+	}
+}
