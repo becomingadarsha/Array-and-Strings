@@ -1,34 +1,43 @@
 #include<stdio.h>
 int main()
 {
-	int i,j,a[10][10],row,col,sum=0;
+	int i,j,a[10][10],row,col,sum=0,b=0;
 	printf("Enter order of matrix:");
 	scanf("%d%d",&row,&col);
 	if(row==col)
 	{
 
 	printf("\nEnter the components of matrix:\n");
-	for(i=0; i<row; i++)
+	for(i=0; i<row; ++i)
 	{
-        for(j=0; j<col; j++)
+
+        for(j=0; j<col; ++j)
         {
+            printf("Enter elements a%d%d: ",i+1, j+1);
             scanf("%d", &a[i][j]);
         }
     }
     
-        	for(i=0; i<row; i++)
+        	for(i=0; i<row; ++i)
         	{
-        		 for(j=0; j<col; j++)
+        		 for(j=0; j<col; ++j)
         {
         	if(i==j)
         	{
         		sum=sum+a[i][j];
 			}
+		    if (i+j==row-1)
+			{
+				  b=b+a[i][j];
+			}
 			
 		}
 			}
-			printf("\nThe sum of diagonal of given matrix is %d",sum);
+			printf("\nThe sum of main diagonal of given matrix is %d",sum);
+			printf("\nThe sum of off diagonal of matrix is %d",b);
+			
 		}
+	
 		else
 		{
 				printf("\nINVALID!! Enter equal rows and columns for square matrix.");
