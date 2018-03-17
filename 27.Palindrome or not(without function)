@@ -1,0 +1,31 @@
+/*check the word is pelidrom or not without using function*/
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+	int i,j,diff=0,count=0,x;
+	char str[100],rev[100];
+	printf("Enter a word : \t\t\t\t");
+	scanf("%s",&str);
+	for(i=0;str[i]!='\0';i++)
+	count++;
+	printf("The reverse of word entered is : \t");
+	for(i=0;i<count;i++)
+	{
+		rev[i]=str[count-1-i];
+		printf("%c",rev[i]);
+	}
+	for(i=0;i<count;i++)
+	{
+		if(str[i]==rev[i])
+		x=0;
+		else
+		x=1;
+		diff+=x;
+	}
+	printf("\n\n");
+	if(diff==0)
+	printf("The word is pelidrom.");
+	else
+	printf("the word is not pelidrom.");
+}
